@@ -125,5 +125,5 @@ MEDIA_ROOT = 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
-    "*"
+    "https://d441-2405-201-202a-a00c-d3a-b0b7-9818-b1ab.ngrok-free.app"
 ]
