@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="/add-listing/" class="text-blue-500 hover:text-blue-700">Create a New listing </a>
+{% for listing in listings %}
+
+<div class="px-3 py-2 bg-gray-100 hover:bg-gray-300 block my-2 rounded-sm">
+   <h3 class="text-3xl "> {{ listing.title }}</h3>
+   
+   {% if listing.image %}
+       <img src="{{ listing.image.url }}" alt="{{ listing.title }}">
+   {% else %}
+       <p>No image available</p>
+   {% endif %}
+   
+   <a href="/listings/{{ listing.id }}" class="text-blue-500 hover:text-blue-700">
+       View details 
+   </a> 
+</div>
+
+{% endfor %}
+
+{% endblock content %}

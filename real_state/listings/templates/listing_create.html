@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="text-4xl text-gray-900">Create a new Listing</h1>
+<form method="post" enctype="multipart/form-data" class="block font-semibold text-gray-700 w-full p-4 border rounded-lg focus:ring-2 focus:ring-blue-50">
+    {% csrf_token %}
+    <div class="space-y-4">
+        {{ form.as_p }}
+    </div>
+    <button type="submit" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Submit</button>
+</form>
+
+{% endblock content %}
