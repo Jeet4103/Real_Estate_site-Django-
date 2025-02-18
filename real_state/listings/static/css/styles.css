@@ -1,0 +1,223 @@
+@import url('https://unpkg.com/@tailwindcss/browser@4');
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem; /* Equivalent to max-w-5xl */
+    padding-left: 1rem; /* Equivalent to px-4 */
+    padding-right: 1rem;
+    padding-top: 1rem; /* Equivalent to py-4 */
+    padding-bottom: 1rem;
+}
+
+.listing-container {
+    padding: 0.5rem 0.75rem; /* px-3 py-2 */
+    background-color: #f3f4f6; /* bg-gray-100 */
+    border-radius: 0.125rem; /* rounded-sm */
+    margin: 0.5rem 0; /* my-2 */
+    display: block;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.listing-container:hover {
+    background-color: #d1d5db; /* hover:bg-gray-300 */
+}
+
+.listing-title {
+    font-size: 1.875rem; /* text-3xl */
+}
+
+.price-text {
+    color: #111827; /* text-gray-900 */
+}
+
+.address-text {
+    color: #4b5563; /* text-gray-600 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+.staff-actions {
+    margin-top: 1.25rem; /* mt-5 */
+    padding-top: 1.25rem; /* py-5 */
+    border-top: 1px solid #e5e7eb; /* border-t border-gray-200 */
+}
+
+.action-link {
+    color: #3b82f6; /* text-blue-500 */
+    font-size: 0.875rem; /* text-sm */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.action-link:hover {
+    color: #1d4ed8; /* hover:text-blue-700 */
+}
+
+.ml-3 {
+    margin-left: 0.75rem; /* Equivalent to ml-3 */
+}
+
+/* styles.css */
+
+.heading {
+    font-size: 2.25rem; /* Tailwind’s text-4xl equivalent */
+    color: #1a202c; /* Tailwind’s text-gray-900 equivalent */
+}
+
+.form-container {
+    display: block;
+    font-weight: 600;
+    color: #4a5568; /* Tailwind’s text-gray-700 equivalent */
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    background-color: #3b82f6; /* Tailwind’s bg-blue-500 equivalent */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #2563eb; /* Tailwind’s bg-blue-600 equivalent */
+}
+/* styles.css */
+
+.heading {
+    font-size: 2.25rem; /* Equivalent to Tailwind's text-4xl */
+    color: #1a202c; /* Equivalent to Tailwind's text-gray-900 */
+}
+
+.form-container {
+    display: block;
+    font-weight: 600;
+    color: #4a5568; /* Equivalent to Tailwind's text-gray-700 */
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    background-color: #3b82f6; /* Equivalent to Tailwind's bg-blue-500 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.submit-button:hover {
+    background-color: #2563eb; /* Equivalent to Tailwind's bg-blue-600 */
+}
+/* styles.css */
+
+.create-listing-link {
+    color: #3b82f6; /* Tailwind's text-blue-500 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-listing-link:hover {
+    color: #1d4ed8; /* Tailwind's text-blue-700 */
+}
+
+.listing-card {
+    padding: 0.75rem 1rem;
+    background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.listing-card:hover {
+    background-color: #d1d5db; /* Tailwind's bg-gray-300 */
+}
+
+.listing-title {
+    font-size: 1.875rem; /* Tailwind's text-3xl */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.listing-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.no-image-text {
+    font-style: italic;
+    color: #6b7280; /* Tailwind's text-gray-500 */
+}
+
+/* styles.css */
+/* styles.css */
+
+/* Listing Card */
+.listing-card {
+    padding: 0.75rem 1rem;
+    background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.listing-card:hover {
+    background-color: #d1d5db; /* Tailwind's bg-gray-300 */
+}
+
+.listing-title {
+    font-size: 1.875rem; /* Tailwind's text-3xl */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Container for Image and Link */
+.listing-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+}
+
+/* Styling for Image */
+.listing-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* "View details" link placed below the image or "No image available" text */
+.view-details-link {
+    color: #3b82f6; /* Tailwind's text-blue-500 */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px; /* Space between the image (or text) and the link */
+}
+
+.view-details-link:hover {
+    color: #1d4ed8; /* Tailwind's text-blue-700 */
+}
+
+/* For No Image Text */
+.no-image-text {
+    font-style: italic;
+    color: #6b7280; /* Tailwind's text-gray-500 */
+}

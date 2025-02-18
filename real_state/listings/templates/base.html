@@ -1,16 +1,16 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Django Real Estate</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Load the static CSS file -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <div class="mx-auto max-w-5xl px-4 py-4" >
+    <div class="container">
         {% block content %}
-
-         {% endblock content %}
+        {% endblock content %}
     </div>
-         
-    
 </body>
 </html>
