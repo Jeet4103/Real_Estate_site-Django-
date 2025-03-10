@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="listing-container">
+  <h3 class="listing-title">{{ listing.title }}</h3>
+  <p class="price-text">${{ listing.price }}</p>
+  <p class="address-text">{{ listing.address }}</p>
+
+  {% if request.user.is_staff %}
+  <div class="staff-actions">
+      <a href="/listings/{{ listing.id }}/edit/" class="action-link">Edit</a>
+      <a href="/listings/{{ listing.id }}/delete/" class="action-link ml-3">Delete</a>
+  </div>
+  {% endif %}
+</div>
+
+
+{% endblock  %}

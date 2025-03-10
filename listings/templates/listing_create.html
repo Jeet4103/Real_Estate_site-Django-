@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="heading">Create a New Listing</h1>
+
+<form method="post" enctype="multipart/form-data" class="form-container">
+    {% csrf_token %}
+    <div class="form-group">
+        {{ form.as_p }}
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+</form>
+
+{% endblock content %}

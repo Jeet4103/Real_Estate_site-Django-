@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a href="/add-listing/" class="create-listing-link">Create a New Listing</a>
+
+{% for listing in listings %}
+<div class="listing-card">
+   <h3 class="listing-title">{{ listing.title }}</h3>
+
+   <div class="listing-image-container">
+       {% if listing.image %}
+           <img src="{{ listing.image.url }}" alt="{{ listing.title }}" class="listing-image">
+       {% else %}
+           <p class="no-image-text">No image available</p>
+       {% endif %}
+       <!-- The link is always present, regardless of the image -->
+       <a href="/listings/{{ listing.id }}" class="view-details-link">View details</a>
+   </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
